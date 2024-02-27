@@ -2,24 +2,19 @@ import React, { useEffect, useRef } from 'react'
 
 export default function ExUseRef() {
     const containerRef = useRef()
-    const imageRef = useRef()
     useEffect(()=>{
-        imageRef.current = new Image();
-        imageRef.current.src = 'https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg'
-        containerRef.current.appendChild(imageRef.current);
-   
-
+        containerRef.current.classList.add('bg-red-500')
+        
+        containerRef.current.appendChild()
         return ()=>{
-            if(containerRef.current && imageRef.current){
-                console.log("inside",containerRef.current,imageRef.current);
-                containerRef.current.removeChild(imageRef.current);
-                imageRef.current = null; 
+            if(containerRef.current){ 
+                // containerRef.current.classList.remove('bg-red-500')  
             }  
         }
         
     },[])
     return (
-        <div ref={containerRef} className='w-32  '>
+        <div ref={containerRef} className='h-32  '>
               
         </div>
     )

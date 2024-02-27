@@ -1,3 +1,4 @@
+import { Loader, Loader2 } from 'lucide-react';
 import React, { useState, useTransition } from 'react'
 
 export default function ExUseTransition() {
@@ -9,9 +10,6 @@ export default function ExUseTransition() {
         })
     }
 
-    const allTabs = [
-        {}
-    ]
     return (
         <div>
             <div className='flex items-center container '>
@@ -36,7 +34,7 @@ export default function ExUseTransition() {
 function TabButton(props) {
     return (
         <button onClick={() => props.selectTab(props.tabIndex)}
-            className={`px-2 py-px bg-slate-300  border-b-2  ${props.tab === props.tabIndex && "border-b-blue-500"}`}
+            className={`px-2 py-px bg-slate-300  border-b-2 flex ${props.tab === props.tabIndex && "border-b-blue-500"}`}
         >
             {props.children}
         </button>

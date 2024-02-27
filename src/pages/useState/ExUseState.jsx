@@ -7,6 +7,9 @@ export default function ExUseState() {
             ...formData,
             [e.target.name]:e.target.value
         })
+        console.log(e.target.value);
+        
+
     }
     return (
         <form> 
