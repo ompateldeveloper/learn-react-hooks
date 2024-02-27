@@ -16,6 +16,7 @@ export default function ExUseRef() {
                 imageRef.current = null; 
             }  
         }
+        
     },[])
     return (
         <div ref={containerRef} className='w-32  '>

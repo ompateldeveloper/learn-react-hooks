@@ -10,6 +10,9 @@ import ExUseRef from "./pages/useRef/ExUseRef"
 import ExUseContext from "./pages/useContext/ExUseContext"
 import ExUseCallback from "./pages/useCallback/ExUseCallback"
 import ExUseDefferedValue from "./pages/useDefferedValue/ExUseDefferedValue"
+import ExUseReducer from "./pages/useReducer/ExUseReducer"
+import ExUseMemo from "./pages/useMemo/ExUseMemo"
+import ExUseTransition from "./pages/useTransition/ExUseTransition"
 
 
 function App() {
@@ -27,7 +30,10 @@ function App() {
                     <Route path={'/useref'} element={<ExUseRef />} />
                     <Route path={'/usecontext'} element={<ExUseContext />} />
                     <Route path={'/usecallBack'} element={<ExUseCallback />} />
+                    <Route path={'/usememo'} element={<ExUseMemo />} />
                     <Route path={'/usedeffered'} element={<ExUseDefferedValue />} />
+                    <Route path={'/usereducer'} element={<ExUseReducer />} />
+                    <Route path={'/usetransition'} element={<ExUseTransition />} />
                     <Route path={'*'} element={<ErrorPage />} />
                 </Routes>
             </div>
